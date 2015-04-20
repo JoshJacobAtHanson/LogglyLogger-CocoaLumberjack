@@ -35,6 +35,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'Logger' do |ss|
     ss.source_files = 'LogglyLogger-CocoaLumberjack/LogglyLogger.{h,m}'
-    ss.dependency     'AFNetworking', '~> 2.0'
+    ss.dependency     'AFNetworking', '~> 1.3.0'
   end
 end
