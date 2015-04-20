@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.dependency     'CocoaLumberjack', '~> 2.0.0'
-  s.dependency     'AFNetworking', '~> 2.0'
+  s.dependency     'AFNetworking', '~> 1.3.0'
 
   s.subspec 'Formatter' do |ss|
     ss.source_files = 'LogglyLogger-CocoaLumberjack/{LogglyFields,LogglyFormatter}.{h,m}'
