@@ -22,7 +22,8 @@
         } else {
             [dict setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"] forKey:@"appname"];
         }
-        [dict setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] forKey:@"appversion"];
+        [dict setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"] forKey:@"appversion"];
+        [dict setObject:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] forKey:@"buildversion"];
         [dict setObject:[UIDevice currentDevice].name forKey:@"devicename"];
         [dict setObject:[UIDevice currentDevice].model forKey:@"devicemodel"];
         [dict setObject:[UIDevice currentDevice].systemVersion forKey:@"osversion"];
